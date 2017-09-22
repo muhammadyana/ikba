@@ -1,5 +1,4 @@
 # Database Ikatan Keluarga Besar Al-Mizan
-```sh
 Data-data alumni pondok pesantren modern Al-Mizan.
 ## Technologi
 
@@ -11,5 +10,4 @@ Data-data alumni pondok pesantren modern Al-Mizan.
 
 * Bootstrap
 
-By: [Muhammad Yana Mulyana](https://yana.web.id)
-```
+- By: [Muhammad Yana Mulyana](https://yana.web.id)
