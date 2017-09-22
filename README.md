@@ -1,24 +1,15 @@
-# README
+# Database Ikatan Keluarga Besar Al-Mizan
+```sh
+Data-data alumni pondok pesantren modern Al-Mizan.
+## Technologi
+```sh
+* Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* PostgreSQL
 
-Things you may want to cover:
+* Material Dashboard
 
-* Ruby version
+* Bootstrap
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+By:
+[Muhammad Yana Mulyana](https://yana.web.id)
