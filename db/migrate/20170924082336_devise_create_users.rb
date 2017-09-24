@@ -1,4 +1,4 @@
-class DeviseCreateUsers < ActiveRecord::Migration[5.1]
+  class DeviseCreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
       ## Database authenticatable
@@ -19,6 +19,13 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       t.inet     :current_sign_in_ip
       t.inet     :last_sign_in_ip
 
+      # Personal Data
+      t.string  :name
+      t.text    :address
+      t.string  :alumni
+      t.string  :job
+      t.string  :hp
+      
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
