@@ -16,7 +16,6 @@ html lang="en"
   body
     /li class=(params[:form].eql?('trash') ? 'active' : '')
     /= render 'shared/navbar'
-    = yield
     - if notice
       .alert.alert-success.mt-70
         .container
@@ -36,6 +35,8 @@ html lang="en"
               i.material-icons clear
           b
             = alert.html_safe
+    = yield
+    
     /= render 'shared/footer'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = yield :body_script_bottom

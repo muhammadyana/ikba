@@ -3,6 +3,11 @@ Rails.application.routes.draw do
     :sessions           => 'users/sessions', 
     :registrations      => 'users/registrations'
   }
+  devise_scope :user do
+    delete 'logout', to: 'devise/sessions#destroy'
+    # get 'signup', to: 'devise/registrations#new'
+    # get 'login', to: 'devise/sessions#new'
+  end
   get 'static_page/home'
   root 'static_page#home'
 
