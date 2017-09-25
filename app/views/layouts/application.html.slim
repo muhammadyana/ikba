@@ -1,0 +1,53 @@
+
+doctype html
+html lang="en"
+  head
+    title Ikatan Keluarga Besar Al-Mizan
+    /= display_meta_tags site: t('.title')
+    / = title 'My page title'
+    /= display_meta_tags description: "All text about keywords, other keywords"
+    = csrf_meta_tags 
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" 
+    link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet" type="text/css" 
+    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'
+    /= display_meta_tags icon: 'https://indoexchanger.co.id/file/logo/logo-circle.png'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    
+  body
+    /li class=(params[:form].eql?('trash') ? 'active' : '')
+    /= render 'shared/navbar'
+    
+    = yield
+    - if notice
+      .alert.alert-success.mt-70
+        .container
+          .alert-icon
+            i.material-icons check
+          button.close aria-label="Close" data-dismiss="alert" type="button" 
+            span aria-hidden="true" 
+              i.material-icons clear
+          b = notice
+    - if alert
+      .alert.alert-danger.mt-70
+        .container
+          .alert-icon
+            i.material-icons error_outline
+          button.close aria-label="Close" data-dismiss="alert" type="button" 
+            span aria-hidden="true" 
+              i.material-icons clear
+          b
+            = alert.html_safe
+    /= render 'shared/footer'
+    / = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = yield :body_script_bottom
+    
+    
+    
+          
+      
+
+    
+    
+
