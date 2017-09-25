@@ -81,6 +81,7 @@ GEM
     devise_invitable (1.7.2)
       actionmailer (>= 4.1.0)
       devise (>= 4.0.0)
+    dotenv (2.2.1)
     erubi (1.6.1)
     execjs (2.7.0)
     faker (1.8.4)
@@ -275,6 +276,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   devise_invitable
+  dotenv
   faker
   font-awesome-rails
   friendly_id (~> 5.1.0)
