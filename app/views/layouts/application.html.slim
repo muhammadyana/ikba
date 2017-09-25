@@ -16,7 +16,6 @@ html lang="en"
   body
     /li class=(params[:form].eql?('trash') ? 'active' : '')
     /= render 'shared/navbar'
-    
     = yield
     - if notice
       .alert.alert-success.mt-70
