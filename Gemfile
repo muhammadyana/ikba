@@ -43,11 +43,15 @@ gem 'simple_form'
 gem 'material_icons'
 gem 'nprogress-rails'
 # gem 'apipie-rails'
-gem 'metamagic'
+# gem 'metamagic'
 gem 'devise'
+gem 'devise_invitable'
+# facebook login
 gem 'omniauth-facebook'
+# google login
+gem 'omniauth-google-oauth2'
+# twitter login
 gem 'omniauth-twitter'
-gem 'omniauth-gplus'
 gem 'meta-tags'
 gem "font-awesome-rails"
 group :development, :test do
