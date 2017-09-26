@@ -21,6 +21,7 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #  slug                   :string
+#  bio                    :text
 #
 # Indexes
 #
@@ -29,6 +30,7 @@
 #
 
 class User < ApplicationRecord
+	extend FriendlyId
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   friendly_id :name, use: :slugged
