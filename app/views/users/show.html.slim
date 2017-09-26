@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+	= @user.name
+p = @user.email
+p = @user.username
+p = @user.phone
+p = @user.bio
+
+/ 	= current_user.name
+/ p = current_user.username
+/ p = current_user.email
+/ = link_to 'Edit', edit_user_path(@user)
+= link_to 'Edit', edit_user_path(@user)
+= link_to 'Back', users_path
