@@ -45,7 +45,6 @@ gem 'nprogress-rails'
 # gem 'apipie-rails'
 # gem 'metamagic'
 gem 'devise'
-gem 'devise_invitable'
 # facebook login
 gem 'omniauth-facebook'
 # google login
