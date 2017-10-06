@@ -12,7 +12,6 @@ html lang="en"
     link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'
     /= display_meta_tags icon: 'https://indoexchanger.co.id/file/logo/logo-circle.png'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    
   body
     /li class=(params[:form].eql?('trash') ? 'active' : '')
     /= render 'shared/navbar'
@@ -38,6 +37,7 @@ html lang="en"
     = yield
     
     /= render 'shared/footer'
+    
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = yield :body_script_bottom
     
