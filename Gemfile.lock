@@ -44,6 +44,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
+    awesome_print (1.8.0)
     bcrypt (3.1.11)
     better_errors (2.3.0)
       coderay (>= 1.0.0)
@@ -81,9 +82,6 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
-    devise_invitable (1.7.2)
-      actionmailer (>= 4.1.0)
-      devise (>= 4.0.0)
     dotenv (2.2.1)
     erubi (1.6.1)
     execjs (2.7.0)
@@ -272,6 +270,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass-extras
@@ -279,7 +278,6 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
-  devise_invitable
   dotenv
   faker
   font-awesome-rails
@@ -311,4 +309,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2

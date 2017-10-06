@@ -74,6 +74,7 @@ group :development do
   gem 'faker'
   gem 'letter_opener'
   gem 'annotate'
+  gem 'awesome_print'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
