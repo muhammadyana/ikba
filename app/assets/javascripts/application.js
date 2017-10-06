@@ -1,6 +1,5 @@
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
-//
 //= require rails-ujs
 //= require jquery-3.2.1.min
 //= require turbolinks
