@@ -7,9 +7,10 @@ Rails.application.routes.draw do
   devise_scope :user do
     delete 'logout', to: 'users/sessions#destroy'
     # get 'signup', to: 'devise/registrations#new'
-    # get 'login', to: 'devise/sessions#new'
+    get 'login', to: 'users/sessions#new'
   end
   get 'static_page/home'
+
   root 'static_page#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
