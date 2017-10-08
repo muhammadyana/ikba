@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     sessions:            'users/sessions', 
     registrations:       'users/registrations',
     passwords:           'users/passwords'
+    
   }
   resources :users
   devise_scope :user do
