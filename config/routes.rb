@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :users
   devise_scope :user do
     delete 'logout', to: 'users/sessions#destroy'
-    # get 'signup', to: 'devise/registrations#new'
+    get 'signup', to: 'users/registrations#new'
     get 'login', to: 'users/sessions#new'
   end
   get 'static_page/home'
