@@ -32,28 +32,42 @@ gem 'redis', '~> 3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Json builder
 gem 'jbuilder', '~> 2.5'
+
+#javascript
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'jquery'
+gem 'nprogress-rails'
+
+#css
 gem 'bootstrap-sass-extras'
 gem 'slim-rails'
-gem 'friendly_id', '~> 5.1.0'
-gem 'simple_form'
 gem 'material_icons'
-gem 'nprogress-rails'
+gem "font-awesome-rails"
+
+#link beutifir
+gem 'friendly_id', '~> 5.1.0'
+
+#form
+gem 'simple_form'
 # gem 'apipie-rails'
 # gem 'metamagic'
+# 
+# Atuthentication
 gem 'devise'
-# facebook login
 gem 'omniauth-facebook'
-# google login
 gem 'omniauth-google-oauth2'
-# twitter login
 gem 'omniauth-twitter'
+
+#SEO
 gem 'meta-tags'
-gem "font-awesome-rails"
+
 gem 'dotenv'
+gem 'awesome_print'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -77,7 +91,6 @@ group :development do
   gem 'faker'
   gem 'letter_opener'
   gem 'annotate'
-  gem 'awesome_print'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
