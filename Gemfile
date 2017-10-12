@@ -61,6 +61,7 @@ gem 'omniauth-twitter'
 
 #SEO
 gem 'meta-tags'
+gem 'metamagic'
 
 gem 'dotenv'
 gem 'awesome_print'
