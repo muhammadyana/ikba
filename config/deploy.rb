@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock "3.9.1"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "ikba"
+set :repo_url, "git@github.com:muhammadyana/ikba.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
