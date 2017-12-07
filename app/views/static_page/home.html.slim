@@ -10,9 +10,9 @@
             i.material-icons dashboard
             p Dashboard
         li
-          a href="./user.html" 
+          = link_to logout_path, method: :delete
             i.material-icons person
-            p User Profile
+            p Logout
         li
           a href="./table.html" 
             i.material-icons content_paste
