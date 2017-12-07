@@ -30,8 +30,8 @@ Rails.application.configure do
       :address        => 'smtp.sendgrid.net',
       :port           => '587',
       :authentication => :plain,
-      :user_name      => 'yanamuhammad',
-      :password       => '@ccesspass22',
+      :user_name      => 'asilah',
+      :password       => '@silahSendgrid22',
       :domain         => 'www.ikba.herokuapp.com'
   }
   # Compress JavaScripts and CSS.
