@@ -22,6 +22,10 @@
 #  updated_at             :datetime         not null
 #  slug                   :string
 #  bio                    :text
+#  confirmation_token     :string
+#  confirmed_at           :datetime
+#  confirmation_sent_at   :datetime
+#  unconfirmed_email      :string
 #
 # Indexes
 #

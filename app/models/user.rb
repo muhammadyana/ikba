@@ -22,6 +22,10 @@
 #  updated_at             :datetime         not null
 #  slug                   :string
 #  bio                    :text
+#  confirmation_token     :string
+#  confirmed_at           :datetime
+#  confirmation_sent_at   :datetime
+#  unconfirmed_email      :string
 #
 # Indexes
 #
@@ -34,6 +38,5 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   friendly_id :name, use: :slugged
-  devise :database_authenticatable, :registerable,
-       	:recoverable, :rememberable, :validatable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable, :trackable, :confirmable
 end
